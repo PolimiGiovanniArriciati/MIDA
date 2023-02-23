@@ -1,0 +1,41 @@
+\lesson{Lesson 01: Stochastic Processes}{Stochastic Processes}
+
+\begin{definition}{Stochastic Process}
+	A stochastic process is a sequence of random variables all defined on the same probability space.
+\end{definition}
+
+\begin{example}
+	... v(1,S), v(2,S), v(3,S), ... v(t, S), ...\\
+	where: S is the outcome of a random experiment realization
+					t is the time, index of the sequence
+\end{example}
+
+\begin{paragraph}
+- REMARK: A SP extends the notion of a random variable to a sequence of random variables.\\
+example: a deterministic time signal\\
+example: a random variable in a given time
+%insert awesom pictures here
+\end{paragraph}
+
+\begin{paragraph}{Widesense characterization of a SP}\\
+	\begin{theorem}{mean value}
+		Let $m(t)$ be the mean value of $v(t,S)$ for all $t$ and all $S$.\\
+		Then $m(t)$ is a deterministic time signal.\\
+		$m(t) = \mathbb{E}[v(t,S)]\\ = \int_{\Omega} v(t,S) \, dP(S)$\\
+		where $P(S)$ is the probability measure of the random experiment.
+		and $\Omega$ is the sample space of the random experiment.
+	\end{theorem}
+
+	\begin{theorem}{variance}
+		Let $v(t,S)$ be a SP.\\
+		Then $v(t,S)$ is a SP if and only if $v(t,S)$ is a SP for all $t$ and all $S$.\\
+		$v(t,S) = \mathbb{E}[(v(t,S) - m(t))^2]\\
+		= \int_{\Omega} (v(t,S) - m(t))^2 \, dP(S)$ or $v(t,S) = \mathbb{E}[v(t,S)^2] - m(t)^2$
+	\end{theorem}
+	It's the correlation between $v(t,S)$ and $v(t',S)$
+	\begin{corollary}
+		Remember that $gamma(t_1, t_2) = gamma(t_3, t_4i) \leftrightarrow  $t_1 - t_2 = t_3 - t_4$.
+	\end{corollary}
+\end{paragraph}
+
+\newpage

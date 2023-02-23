@@ -1,0 +1,17 @@
+# MacOs
+.DS_Store
+
+#LaTeX files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.dvi
+*.xdv
+*.nav
+*.tdo
